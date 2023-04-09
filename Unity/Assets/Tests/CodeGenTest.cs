@@ -8,7 +8,7 @@ namespace Test
 {
     using Random = UnityEngine.Random;
 
-    public class CodeGenTest01
+    public class CodeGenTest
     {
         [OneTimeSetUp]
         public void SetUp()
