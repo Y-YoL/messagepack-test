@@ -2,5 +2,7 @@ Temp
 Library
 Logs
 UserSettings
-/.vs
+.vs
+obj
 /Unity/*.sln
+/Unity/*.csproj
