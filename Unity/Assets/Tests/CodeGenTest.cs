@@ -88,6 +88,28 @@ namespace Test
             Assert.AreEqual(value, y.Value);
         }
 
+        /// <summary>
+        /// https://github.com/neuecc/MessagePack-CSharp/issues/1563
+        /// </summary>
+        [Test]
+        public void Test04()
+        {
+            var value = ((UnityEngine.KeyCode[])Enum.GetValues(typeof(UnityEngine.KeyCode)))
+                .OrderBy(_ => Guid.NewGuid())
+                .First();
+
+            var x = new TestClass
+            {
+                Key = value,
+            };
+
+            var bytes = MessagePackSerializer.Serialize(x);
+
+            var y = MessagePackSerializer.Deserialize<TestClass>(bytes);
+
+            Assert.AreEqual(value, y.Key);
+        }
+
         [MessagePackObject]
         public class Data01
         {
