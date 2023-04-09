@@ -1,5 +1,6 @@
 using System;
 using MessagePack;
+using MessagePack.Resolvers;
 using NUnit.Framework;
 using Sample.WithAsmdef;
 using UnityEngine;
@@ -14,7 +15,10 @@ namespace Test
         public void SetUp()
         {
             MessagePackSerializer.DefaultOptions = MessagePackSerializerOptions.Standard
-                .WithResolver(GeneratedMessagePackResolver.Instance);
+                .WithResolver(CompositeResolver.Create(
+                    StandardAotResolver.Instance,
+                    global::MessagePack.GeneratedMessagePackResolver.Instance,
+                    Sample.WithAsmdef.GeneratedMessagePackResolver.Instance));
         }
 
         [Test]
@@ -58,7 +62,7 @@ namespace Test
 
             var bytes = MessagePackSerializer.Serialize(x);
 
-            var y = MessagePackSerializer.Deserialize<Data01>(bytes);
+            var y = MessagePackSerializer.Deserialize<Data02>(bytes);
 
             Assert.AreEqual(value, y.Value);
         }
