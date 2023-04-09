@@ -5,7 +5,8 @@
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
         "MessagePack",
-        "MessagePack.Annotations"
+        "MessagePack.Annotations",
+        "WithAsmdef"
     ],
     "includePlatforms": [
         "Editor"
