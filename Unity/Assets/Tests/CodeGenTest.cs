@@ -1,8 +1,10 @@
 using System;
+using System.Linq;
 using MessagePack;
 using MessagePack.Resolvers;
 using NUnit.Framework;
 using Sample.WithAsmdef;
+using Sample.WithAsmdef2;
 using UnityEngine;
 
 namespace Test
@@ -63,6 +65,25 @@ namespace Test
             var bytes = MessagePackSerializer.Serialize(x);
 
             var y = MessagePackSerializer.Deserialize<Data02>(bytes);
+
+            Assert.AreEqual(value, y.Value);
+        }
+
+        [Test]
+        public void Test03()
+        {
+            var value = ((MyEnum[])Enum.GetValues(typeof(MyEnum)))
+                .OrderBy(_ => Guid.NewGuid())
+                .First();
+
+            var x = new Data03
+            {
+                Value = value,
+            };
+
+            var bytes = MessagePackSerializer.Serialize(x);
+
+            var y = MessagePackSerializer.Deserialize<Data03>(bytes);
 
             Assert.AreEqual(value, y.Value);
         }
