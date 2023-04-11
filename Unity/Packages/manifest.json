@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.neuecc.messagepack": "https://github.com/AArnott/MessagePack-CSharp.git?path=src/MessagePack.UnityClient/Assets/Scripts/MessagePack#sourceGenerator1495",
+    "com.neuecc.messagepack": "https://github.com/Y-YoL/MessagePack-CSharp.git?path=src/MessagePack.UnityClient/Assets/Scripts/MessagePack#sourceGenerator1495-add-immutable-to-unity",
     "com.unity.collab-proxy": "1.17.6",
     "com.unity.feature.development": "1.0.1",
     "com.unity.ide.rider": "3.0.16",
