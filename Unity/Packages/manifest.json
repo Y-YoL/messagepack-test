@@ -12,6 +12,7 @@
     "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.7.8",
     "org.nuget.microsoft.net.stringtools": "17.4.0",
+    "org.nuget.system.collections.immutable": "7.0.0",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
