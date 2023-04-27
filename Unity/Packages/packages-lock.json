@@ -1,11 +1,11 @@
 {
   "dependencies": {
     "com.neuecc.messagepack": {
-      "version": "https://github.com/Y-YoL/MessagePack-CSharp.git?path=src/MessagePack.UnityClient/Assets/Scripts/MessagePack#sourceGenerator1495-add-immutable-to-unity",
+      "version": "https://github.com/neuecc/MessagePack-CSharp.git?path=src/MessagePack.UnityClient/Assets/Scripts/MessagePack#develop",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "ee8eff25f910d693093aef5f64003dd16ddfda50"
+      "hash": "d1b45b00c8e632533ec898c44a793fe76d55b7f6"
     },
     "com.unity.collab-proxy": {
       "version": "1.17.6",
