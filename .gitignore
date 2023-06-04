@@ -4,5 +4,6 @@ Logs
 UserSettings
 .vs
 obj
+bin
 /Unity/*.sln
 /Unity/*.csproj
