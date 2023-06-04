@@ -1,5 +1,5 @@
 
-$PSScriptRoot
+dotnet --version
 
 # clean build
 git -C "$PSScriptRoot/src" clean -xdf
