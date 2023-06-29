@@ -1,7 +1,6 @@
 {
   "dependencies": {
-    "com.neuecc.messagepack": "https://github.com/neuecc/MessagePack-CSharp.git?path=src/MessagePack.UnityClient/Assets/Scripts/MessagePack#develop",
-    "com.unity.collab-proxy": "1.17.6",
+    "com.neuecc.messagepack": "https://github.com/neuecc/MessagePack-CSharp.git?path=src/MessagePack.UnityClient/Assets/Scripts/MessagePack#v2.6.100-alpha",
     "com.unity.feature.development": "1.0.1",
     "com.unity.ide.rider": "3.0.16",
     "com.unity.ide.visualstudio": "2.0.16",

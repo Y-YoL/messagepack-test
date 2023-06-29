@@ -1,20 +1,11 @@
 {
   "dependencies": {
     "com.neuecc.messagepack": {
-      "version": "https://github.com/neuecc/MessagePack-CSharp.git?path=src/MessagePack.UnityClient/Assets/Scripts/MessagePack#develop",
+      "version": "https://github.com/neuecc/MessagePack-CSharp.git?path=src/MessagePack.UnityClient/Assets/Scripts/MessagePack#v2.6.100-alpha",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "d1b45b00c8e632533ec898c44a793fe76d55b7f6"
-    },
-    "com.unity.collab-proxy": {
-      "version": "1.17.6",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.services.core": "1.0.1"
-      },
-      "url": "https://packages.unity.com"
+      "hash": "6d749218bb1790f7dde5689d8caa703f7d15986f"
     },
     "com.unity.editorcoroutines": {
       "version": "1.0.0",
@@ -69,29 +60,11 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
-    "com.unity.nuget.newtonsoft-json": {
-      "version": "3.0.2",
-      "depth": 2,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
     "com.unity.performance.profile-analyzer": {
       "version": "1.1.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.services.core": {
-      "version": "1.6.0",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.modules.unitywebrequest": "1.0.0",
-        "com.unity.nuget.newtonsoft-json": "3.0.2",
-        "com.unity.modules.androidjni": "1.0.0"
-      },
       "url": "https://packages.unity.com"
     },
     "com.unity.settings-manager": {
