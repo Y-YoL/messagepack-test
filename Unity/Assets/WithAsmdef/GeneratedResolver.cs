@@ -7,6 +7,6 @@ namespace Sample.WithAsmdef
         /// <summary>
         /// manualy export
         /// </summary>
-        public static IFormatterResolver Instance => MessagePack.GeneratedMessagePackResolver.Instance;
+        public static IFormatterResolver Instance => HogeHoge.GeneratedMessagePackResolver.Instance;
     }
 }

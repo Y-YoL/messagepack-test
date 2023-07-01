@@ -5,7 +5,6 @@ using MessagePack.Resolvers;
 using NUnit.Framework;
 using Sample.WithAsmdef;
 using Sample.WithAsmdef2;
-using UnityEngine;
 
 namespace Test
 {
@@ -19,7 +18,7 @@ namespace Test
             MessagePackSerializer.DefaultOptions = MessagePackSerializerOptions.Standard
                 .WithResolver(CompositeResolver.Create(
                     StandardAotResolver.Instance,
-                    global::MessagePack.GeneratedMessagePackResolver.Instance,
+                    global::HogeHoge.GeneratedMessagePackResolver.Instance,
                     Sample.WithAsmdef.GeneratedMessagePackResolver.Instance));
         }
 
