@@ -6,3 +6,4 @@ UserSettings
 obj
 /Unity/*.sln
 /Unity/*.csproj
+artifacts
